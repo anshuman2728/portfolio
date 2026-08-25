@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Syne', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    background-color: #09090B;
+    color: #F4F4F5;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.04em;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #52525B;
+}
+
+/* Editorial Dividing Rules */
+.editorial-border-b {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.editorial-border-t {
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.editorial-border-l {
+  border-left: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.editorial-border-r {
+  border-right: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.editorial-border {
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+/* Minimalist Card & Panel (No heavy glass, pure clean surface) */
+.editorial-panel {
+  background: #0E0E12;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.editorial-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-panel-hover:hover {
+  background: #14141A;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Minimal Frosted Header */
+.editorial-nav {
+  background: rgba(9, 9, 11, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Subtle Editorial Glow (Understated) */
+.subtle-ambient-glow {
+  background: radial-gradient(ellipse 60% 40% at 50% -20%, rgba(255, 255, 255, 0.05), transparent 70%);
+}
+
+/* Smooth Image Scale on Hover */
+.img-editorial-zoom {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-editorial-zoom:hover {
+  transform: scale(1.03);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
