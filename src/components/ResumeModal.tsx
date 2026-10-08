@@ -76,7 +76,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </div>
 
             <div className="p-4 bg-zinc-950 border border-zinc-800 leading-relaxed text-zinc-300 font-sans text-xs sm:text-sm font-light">
-              Results-oriented Software Engineer and Full-Stack Developer with strong expertise in Java, React, Node.js, and scalable web architectures. Proven track record in developing autonomous AI-driven systems, responsive e-commerce platforms, and gamified web applications. Solid foundation in Data Structures and Algorithms (DSA), complex problem solving, API design, and database management.
+              Results-oriented Software Engineer and Full-Stack Developer with strong expertise in Java, React, Node.js, and scalable web architectures. Proven track record in developing autonomous AI-driven assessment tools, responsive e-commerce platforms, and interactive Java applications. Possesses a solid foundation in Data Structures and Algorithms (DSA), complex problem-solving, API design, and database management. Adept at building clean, performance-optimised solutions for modern IT and AI environments.
             </div>
           </div>
 
@@ -86,22 +86,26 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               [ 01 / TECHNICAL SKILLS ]
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
               <div className="p-3.5 bg-zinc-950 border border-zinc-800">
                 <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">PROGRAMMING LANGUAGES</span>
-                <span className="text-white font-medium">Java, JavaScript, TypeScript, HTML5/CSS3, SQL, C</span>
+                <span className="text-white font-medium">Java, JavaScript, TypeScript, HTML5/CSS3, SQL</span>
               </div>
               <div className="p-3.5 bg-zinc-950 border border-zinc-800">
-                <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">FRONTEND FRAMEWORKS</span>
+                <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">CORE COMPETENCIES</span>
+                <span className="text-white font-medium">DSA (175+ Solved), Problem Solving, System Design, OOP</span>
+              </div>
+              <div className="p-3.5 bg-zinc-950 border border-zinc-800">
+                <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">FRONTEND TECHNOLOGIES</span>
                 <span className="text-white font-medium">React 19, Next.js 16, Tailwind CSS, Radix UI, Framer Motion</span>
               </div>
               <div className="p-3.5 bg-zinc-950 border border-zinc-800">
                 <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">BACKEND &amp; DATABASES</span>
                 <span className="text-white font-medium">Node.js, Express.js, RESTful APIs, MongoDB, Supabase (PostgreSQL), ChromaDB</span>
               </div>
-              <div className="p-3.5 bg-zinc-950 border border-zinc-800">
-                <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">TOOLS &amp; COMPETENCIES</span>
-                <span className="text-white font-medium">DSA (150+ Solved), Git/GitHub, Vite, Postman, Agile/Scrum, Prompt Eng.</span>
+              <div className="p-3.5 bg-zinc-950 border border-zinc-800 sm:col-span-2 lg:col-span-2">
+                <span className="text-zinc-500 block text-[10px] uppercase tracking-widest">TOOLS &amp; METHODOLOGIES</span>
+                <span className="text-white font-medium">Git/GitHub, Vite, Postman, Agile/Scrum, Prompt Engineering</span>
               </div>
             </div>
           </div>
@@ -118,17 +122,30 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                   <div className="font-bold text-white font-display text-sm tracking-tight">
                     {proj.title} <span className="text-zinc-500 font-normal text-xs font-mono">&bull; {proj.tagline}</span>
                   </div>
-                  {proj.liveUrl && (
-                    <a
-                      href={proj.liveUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-white text-xs font-mono flex items-center gap-1 hover:underline uppercase tracking-wider"
-                    >
-                      <span>LIVE DEMO</span>
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
-                  )}
+                  <div className="flex items-center gap-3">
+                    {proj.liveUrl && (
+                      <a
+                        href={proj.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-white text-xs font-mono flex items-center gap-1 hover:underline uppercase tracking-wider"
+                      >
+                        <span>LIVE DEMO</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
+                    {proj.githubUrl && (
+                      <a
+                        href={proj.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-zinc-400 hover:text-white text-xs font-mono flex items-center gap-1 hover:underline uppercase tracking-wider"
+                      >
+                        <span>GITHUB</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className="text-[11px] font-mono text-zinc-400">
@@ -155,11 +172,24 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <div className="space-y-2 text-zinc-300">
               {ACHIEVEMENTS.map((ach, idx) => (
-                <div key={idx} className="p-3.5 bg-zinc-950 border border-zinc-800 flex items-start gap-3">
-                  <span className="text-zinc-500 font-bold">&bull;</span>
-                  <div>
-                    <span className="text-white font-bold">{ach.title}</span> ({ach.issuer}): {ach.description}
+                <div key={idx} className="p-3.5 bg-zinc-950 border border-zinc-800 flex items-start justify-between gap-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-zinc-500 font-bold">&bull;</span>
+                    <div>
+                      <span className="text-white font-bold">{ach.title}</span> ({ach.issuer}): {ach.description}
+                    </div>
                   </div>
+                  {ach.link && (
+                    <a
+                      href={ach.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-zinc-400 hover:text-white text-[11px] font-mono flex items-center gap-1 shrink-0 uppercase tracking-wider underline ml-2"
+                    >
+                      <span>VIEW</span>
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -173,11 +203,10 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <div className="p-4 bg-zinc-950 border border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div>
-                <div className="font-bold text-white font-display">JSS ACADEMY OF TECHNICAL EDUCATION (AKTU)</div>
-                <div className="text-zinc-400 text-xs">BACHELOR OF TECHNOLOGY (B.TECH) IN COMPUTER SCIENCE &amp; ENGINEERING</div>
+                <div className="font-bold text-white font-display">JSS ACADEMY OF TECHNICAL EDUCATION, NOIDA, UP</div>
+                <div className="text-zinc-400 text-xs">BACHELOR OF TECHNOLOGY (B.TECH) IN COMPUTER SCIENCE AND ENGINEERING</div>
               </div>
               <div className="text-right text-xs text-white">
-                <div>NOIDA, UP</div>
                 <div>2023 – 2027</div>
               </div>
             </div>

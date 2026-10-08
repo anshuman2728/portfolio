@@ -88,11 +88,11 @@ export const About: React.FC = () => {
 
           <div className="space-y-5 text-zinc-300 text-sm sm:text-base font-light leading-relaxed font-sans">
             <p>
-              I am a results-oriented Software Engineer and Computer Science senior at JSS Academy of Technical Education (AKTU), Noida. My technical journey is anchored in algorithmic problem solving—with <strong>150+ Data Structures and Algorithms problems solved in Java on LeetCode</strong>—paired with modern full-stack web application engineering.
+              I am a results-oriented Software Engineer and Computer Science student at JSS Academy of Technical Education, Noida. My technical journey is anchored in algorithmic problem solving—with <strong>175+ Data Structures and Algorithms problems solved in Java on LeetCode</strong>—paired with modern full-stack web application engineering.
             </p>
 
             <p>
-              My work spans architecting autonomous AI interviewers with multi-turn prompt workflows and zero-downtime heuristic fallback resilience in <strong>Next.js 16</strong>, to building scalable digital commerce platforms in <strong>React 19</strong>, <strong>TypeScript</strong>, and <strong>Supabase PostgreSQL</strong>.
+              My work spans architecting autonomous AI assessment tools with multi-turn prompt workflows and zero-downtime heuristic fallback resilience in <strong>Next.js 16</strong>, building scalable digital commerce platforms in <strong>React 19</strong>, <strong>TypeScript</strong>, and <strong>Supabase PostgreSQL</strong>, to developing interactive standalone <strong>Java applications</strong> applying multithreading, OOP, and custom game physics.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export const About: React.FC = () => {
           {/* Core Foundations Bar */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs text-zinc-400 pt-2">
             <div className="p-3 border border-zinc-800 hover:border-zinc-600 transition-colors text-center">
-              <span className="text-white font-bold block">150+</span>
+              <span className="text-white font-bold block">175+</span>
               <span className="text-[10px] uppercase">DSA in Java</span>
             </div>
             <div className="p-3 border border-zinc-800 hover:border-zinc-600 transition-colors text-center">
@@ -122,8 +122,8 @@ export const About: React.FC = () => {
               <span className="text-[10px] uppercase">HackerRank Cert</span>
             </div>
             <div className="p-3 border border-zinc-800 hover:border-zinc-600 transition-colors text-center">
-              <span className="text-white font-bold block">SIH</span>
-              <span className="text-[10px] uppercase">Hackathon</span>
+              <span className="text-white font-bold block">SIH &bull; Adobe</span>
+              <span className="text-[10px] uppercase">Hackathons</span>
             </div>
             <div className="p-3 border border-zinc-800 hover:border-zinc-600 transition-colors text-center">
               <span className="text-white font-bold block">2025</span>

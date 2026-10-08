@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   title: string;
   tagline: string;
-  category: 'AI & Full Stack' | 'E-Commerce & Frontend' | 'Full Stack System';
+  category: 'AI & Full Stack' | 'E-Commerce & Frontend' | 'Full Stack System' | 'Core Java & OOP';
   featured: boolean;
   liveUrl?: string;
   githubUrl?: string;

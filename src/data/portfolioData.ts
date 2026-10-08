@@ -16,10 +16,10 @@ export const PERSONAL_INFO = {
   portraitUrl: '/assets/anshuman-portrait.jpg',
   sculptureUrl: '/assets/sculpture.jpg',
   status: 'Open for SDE / Full-Stack Engineer Opportunities',
-  bio: `I am a Computer Science Engineer with a rigorous foundation in Data Structures, Algorithms, and modern web architectures. My work centers on engineering autonomous AI-driven systems, dynamic multi-tier applications, and ultra-responsive digital platforms. I bridge scalable backend infrastructure (Java, Spring Boot, Node.js, PostgreSQL/Supabase, MongoDB) with clean, high-craft frontend interfaces (React 19, Next.js 16, TypeScript, Tailwind CSS).`,
+  bio: `Results-oriented Software Engineer and Full-Stack Developer with strong expertise in Java, React, Node.js, and scalable web architectures. Proven track record in developing autonomous AI-driven assessment tools, responsive e-commerce platforms, and interactive Java applications. Possesses a solid foundation in Data Structures and Algorithms (DSA), complex problem-solving, API design, and database management. Adept at building clean, performance-optimised solutions for modern IT and AI environments.`,
   quickMetrics: [
-    { value: '150+', label: 'LeetCode DSA Solved', sublabel: 'Data Structures & Algorithms in Java' },
-    { value: '2', label: 'Live Deployed Platforms', sublabel: 'IntervAI & Hemant Tiles Storefront' },
+    { value: '175+', label: 'LeetCode DSA Solved', sublabel: 'Data Structures & Algorithms in Java' },
+    { value: '3', label: 'Flagship Systems', sublabel: 'IntervAI, Hemant Tiles & Cyber Heist' },
     { value: '2027', label: 'B.Tech CSE Graduation', sublabel: 'JSS Academy of Technical Education' },
     { value: '100%', label: 'Commitment to Craft', sublabel: 'Clean code & resilient architecture' }
   ]
@@ -29,17 +29,17 @@ export const PROJECTS: Project[] = [
   {
     id: 'intervai',
     title: 'IntervAI',
-    tagline: 'Autonomous AI Technical Interviewer & Candidate Assessment Engine',
+    tagline: 'Autonomous AI Technical Interviewer | Next.js, Node.js, Express, MongoDB, OpenRouter API',
     category: 'AI & Full Stack',
     featured: true,
     liveUrl: 'https://interv-ai-weld.vercel.app/',
     githubUrl: 'https://github.com/anshuman2728',
-    description: 'A full-stack, autonomous technical interviewer engineered for multi-turn software engineering assessments. Features real-time AI evaluation, agentic system design feedback, and resilient heuristic fallbacks for enterprise-grade uptime.',
+    description: 'A full-stack, autonomous technical interviewer engineered for multi-turn software engineering assessments. Evaluates system design and agentic workflows, generating detailed performance scorecards with dual-engine heuristic fallback resilience.',
     highlights: [
-      'Engineered dynamic, multi-turn AI interview sessions evaluating candidate answers across algorithms, system design, and coding patterns.',
-      'Integrated OpenRouter API with custom structured evaluation prompts to generate comprehensive performance scorecards and rubric breakdown.',
-      'Architected a dual-engine architecture with in-memory heuristic fallback systems ensuring zero downtime and graceful degradation during external API rate limits.',
-      'Built a high-performance candidate portal with personalized learning telemetry, score history, and real-time response latency tracking.'
+      'Engineered a full-stack AI technical interviewer for dynamic, multi-turn software engineering assessments.',
+      'Integrated OpenRouter API to evaluate system design and agentic workflows, generating detailed performance scorecards.',
+      'Architected a dual-engine system with in-memory heuristic fallbacks, ensuring zero downtime during API rate limits.',
+      'Built a responsive React and Tailwind CSS candidate portal with personalised learning telemetry data.'
     ],
     techStack: ['Next.js 16', 'React', 'Node.js', 'Express.js', 'MongoDB', 'OpenRouter API', 'Tailwind CSS', 'TypeScript'],
     metrics: [
@@ -51,18 +51,17 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'hemant-tiles',
-    title: 'Hemant Tiles & Building Materials',
-    tagline: 'Modern Digital Storefront, Catalog Discovery & Commercial Inquiry Platform',
+    title: 'Hemant Tiles & Building Material Platform',
+    tagline: 'Digital Storefront & Building Supplies Platform | React 19, TypeScript, Vite, Supabase',
     category: 'E-Commerce & Frontend',
     featured: true,
     liveUrl: 'https://hemanttilesandbuildingmaterial.lovable.app/',
     githubUrl: 'https://github.com/anshuman2728',
-    description: 'A modern, responsive digital commerce portal optimizing product discovery, material visual exploration, and commercial order inquiries for high-end tiles and architectural supplies.',
+    description: 'A modern, responsive digital storefront optimizing product discovery, seamless customer navigation, and commercial inquiries for building materials and tiles.',
     highlights: [
-      'Developed a responsive, high-speed digital catalog optimizing product discovery and customer navigation across hundreds of material categories.',
-      'Built scalable, modular UI components utilizing React 19, TypeScript, and Tailwind CSS for seamless multi-device shopping experiences.',
-      'Integrated Supabase (PostgreSQL) for secure, real-time backend data management and inventory catalog persistence.',
-      'Implemented structured form handling with Zod schema validation and React Hook Form to streamline customer quotation inquiries and reduce entry errors.'
+      'Developed a responsive digital storefront optimising product discovery and seamless customer navigation.',
+      'Built scalable UI components using React 19 and TypeScript, integrating Supabase for secure backend data management.',
+      'Implemented structured form handling with Zod validation and React Hook Form to streamline customer inquiries.'
     ],
     techStack: ['React 19', 'TypeScript', 'Vite', 'Supabase (PostgreSQL)', 'Tailwind CSS', 'Zod', 'React Hook Form'],
     metrics: [
@@ -71,6 +70,27 @@ export const PROJECTS: Project[] = [
       { label: 'Validation', value: 'Type-Safe Zod Schemas' }
     ],
     architectureSummary: 'React 19 single-page application powered by Vite with Supabase BaaS PostgreSQL integration, Zod runtime validation, and atomic UI component architecture.'
+  },
+  {
+    id: 'cyber-heist',
+    title: 'Cyber Heist',
+    tagline: 'Interactive Java Application | Core Java, OOP, Multithreading, UI/UX',
+    category: 'Core Java & OOP',
+    featured: true,
+    githubUrl: 'https://github.com/anshuman2728',
+    description: 'A fully functional standalone game applying core Java concepts, including advanced object-oriented programming (OOP), multithreading, and event handling with custom physics and game loops.',
+    highlights: [
+      'Developed a fully functional standalone game applying core Java concepts, including advanced object-oriented programming (OOP), multithreading, and event handling.',
+      'Engineered custom game loops, collision detection algorithms, and dynamic entity state management to ensure smooth and responsive runtime execution.',
+      'Optimised asset rendering and memory management routines to maintain consistent frame rates and optimal performance without memory leaks.'
+    ],
+    techStack: ['Core Java', 'OOP', 'Multithreading', 'Event Handling', 'Game Loops', 'Collision Detection', 'UI/UX'],
+    metrics: [
+      { label: 'Runtime Engine', value: 'Core Java / JVM' },
+      { label: 'Concurrency', value: 'Multithreaded Loops' },
+      { label: 'Performance', value: 'Zero Memory Leaks' }
+    ],
+    architectureSummary: 'Standalone Core Java desktop architecture built with custom multithreaded game loops, decoupled entity state managers, event-driven listener patterns, and optimized graphic rendering cycles.'
   },
   {
     id: 'jeevan-setu',
@@ -100,85 +120,94 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     name: 'Programming Languages',
     iconName: 'Code2',
     skills: [
-      { name: 'Java', level: 'Core / OOP / DSA', highlighted: true },
-      { name: 'TypeScript', level: 'Advanced / Strict Types', highlighted: true },
-      { name: 'JavaScript (ES6+)', level: 'Modern Web / Async', highlighted: true },
+      { name: 'Java', level: 'Core / OOP / Multithreading', highlighted: true },
+      { name: 'JavaScript', level: 'ES6+ / Modern Web / Async', highlighted: true },
+      { name: 'TypeScript', level: 'Strict Types / Generics', highlighted: true },
+      { name: 'HTML5/CSS3', level: 'Semantic & Responsive', highlighted: true },
       { name: 'SQL', level: 'Relational Queries & DDL', highlighted: true },
-      { name: 'C', level: 'Procedural & Memory Fundamentals' },
-      { name: 'HTML5 & CSS3', level: 'Semantic & Responsive' }
+      { name: 'C', level: 'Memory & Procedural Fundamentals' }
     ]
   },
   {
-    name: 'Frontend Ecosystem',
-    iconName: 'Layout',
-    skills: [
-      { name: 'React 19', level: 'Concurrent / Hooks', highlighted: true },
-      { name: 'Next.js 16', level: 'App Router / SSR', highlighted: true },
-      { name: 'Tailwind CSS', level: 'Design Systems / Fluid', highlighted: true },
-      { name: 'Radix UI', level: 'Accessible Headless' },
-      { name: 'Framer Motion', level: 'Physics & Transitions', highlighted: true },
-      { name: 'Zod & React Hook Form', level: 'Schema Validation' }
-    ]
-  },
-  {
-    name: 'Backend, APIs & Databases',
-    iconName: 'Server',
-    skills: [
-      { name: 'Node.js & Express.js', level: 'REST APIs / Microservices', highlighted: true },
-      { name: 'Spring Boot (Java)', level: 'Enterprise Services & APIs', highlighted: true },
-      { name: 'Supabase (PostgreSQL)', level: 'Relational & Auth', highlighted: true },
-      { name: 'MongoDB', level: 'Document DB / NoSQL', highlighted: true },
-      { name: 'ChromaDB', level: 'Vector Embeddings / RAG' },
-      { name: 'OpenRouter & LLM APIs', level: 'Agentic AI Orchestration', highlighted: true }
-    ]
-  },
-  {
-    name: 'Core CS, Tools & Practices',
+    name: 'Core Competencies',
     iconName: 'Cpu',
     skills: [
-      { name: 'Data Structures & Algorithms', level: '150+ Solved in Java', highlighted: true },
-      { name: 'System Design & OOP', level: 'Clean Architecture' },
-      { name: 'Git & GitHub', level: 'Version Control / CI', highlighted: true },
-      { name: 'Vite & Build Tooling', level: 'Modern Bundlers' },
-      { name: 'Postman', level: 'API Testing & Contracts' },
-      { name: 'Agile / Scrum & Prompt Engineering', level: 'Modern Workflow' }
+      { name: 'Data Structures & Algorithms (DSA)', level: '175+ Solved on LeetCode', highlighted: true },
+      { name: 'Complex Problem Solving', level: 'Algorithmic Optimization', highlighted: true },
+      { name: 'System Design', level: 'Scalable Architectures', highlighted: true },
+      { name: 'Object-Oriented Programming (OOP)', level: 'Design Patterns & Principles', highlighted: true }
+    ]
+  },
+  {
+    name: 'Frontend Technologies',
+    iconName: 'Layout',
+    skills: [
+      { name: 'React 19', level: 'Concurrent / Hooks / State', highlighted: true },
+      { name: 'Next.js 16', level: 'App Router / SSR / Full-Stack', highlighted: true },
+      { name: 'Tailwind CSS', level: 'Design Systems & Utility', highlighted: true },
+      { name: 'Radix UI', level: 'Accessible Headless Primitives', highlighted: true },
+      { name: 'Framer Motion', level: 'Physics & Micro-Interactions', highlighted: true },
+      { name: 'Zod & React Hook Form', level: 'Type-Safe Validation' }
+    ]
+  },
+  {
+    name: 'Backend & Databases',
+    iconName: 'Server',
+    skills: [
+      { name: 'Node.js', level: 'Async Runtime & Services', highlighted: true },
+      { name: 'Express.js', level: 'RESTful APIs & Middleware', highlighted: true },
+      { name: 'RESTful APIs', level: 'Contract Design & Endpoints', highlighted: true },
+      { name: 'MongoDB', level: 'NoSQL / Aggregations', highlighted: true },
+      { name: 'Supabase (PostgreSQL)', level: 'Relational DB & BaaS', highlighted: true },
+      { name: 'ChromaDB', level: 'Vector Embeddings / RAG' }
+    ]
+  },
+  {
+    name: 'Tools & Methodologies',
+    iconName: 'Wrench',
+    skills: [
+      { name: 'Git & GitHub', level: 'Version Control / Workflows', highlighted: true },
+      { name: 'Vite', level: 'High-Speed Bundling', highlighted: true },
+      { name: 'Postman', level: 'API Testing & Telemetry', highlighted: true },
+      { name: 'Agile/Scrum', level: 'Iterative Engineering', highlighted: true },
+      { name: 'Prompt Engineering', level: 'Agentic AI & Evaluation', highlighted: true }
     ]
   }
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
   {
-    title: '150+ LeetCode DSA Problems Solved',
+    title: 'Algorithmic Problem Solving (175+ LeetCode DSA)',
     issuer: 'LeetCode (Competitive Programming)',
     date: 'Ongoing Focus',
-    badge: 'Algorithmic Mastery',
+    badge: 'Algorithmic Rigor',
     iconName: 'Terminal',
-    description: 'Demonstrated analytical rigor and complex problem-solving capabilities utilizing Java for array manipulations, trees, dynamic programming, graphs, and system algorithms.'
+    description: 'Successfully solved 175+ Data Structures and Algorithms (DSA) problems on LeetCode utilising Java, demonstrating analytical rigor in arrays, dynamic programming, trees, graphs, and system algorithms.'
   },
   {
-    title: 'Java (Basic) Certified',
+    title: 'Java (Basic) Certificate',
     issuer: 'HackerRank',
     date: 'Verified',
     badge: 'Industry Certification',
     link: 'https://hackerrank.com',
     iconName: 'Award',
-    description: 'Officially certified in core Java concepts including Object-Oriented Programming, Exception Handling, Collections Framework, and Multithreading principles.'
+    description: 'Officially certified in core Java concepts including Object-Oriented Programming (OOP), Collections Framework, Exception Handling, and Multithreading principles.'
   },
   {
-    title: 'Smart India Hackathon (SIH) Contender',
-    issuer: 'Ministry of Education / AICTE',
+    title: 'Hackathon Excellence: Finalist & Qualifier',
+    issuer: 'ABtalks / SIH / Adobe Hackathons',
     date: 'National Level',
-    badge: 'Collaborative Engineering',
+    badge: 'Hackathon Excellence',
     iconName: 'Zap',
-    description: 'Collaborated in an agile technical team under intense time constraints to conceptualize, architect, and prototype technology-driven software solutions for nationwide challenges.'
+    description: 'Finalist in ABtalks Hackathon; Qualified for Round 2 of both the Smart India Hackathon (SIH) and the Adobe Student Hackathon, delivering high-impact solutions under intense agile constraints.'
   },
   {
-    title: 'High Commendation — Youth Parliament',
-    issuer: 'National Youth Parliament Forum (2025)',
+    title: 'Leadership & Communication: High Commendation',
+    issuer: 'Youth Parliament (2025)',
     date: '2025',
-    badge: 'Leadership & Debate',
+    badge: 'Youth Parliament',
     iconName: 'Mic2',
-    description: 'Awarded High Commendation for exceptional public articulation, policy analysis, negotiation, and high-stakes cross-functional critical thinking.'
+    description: 'Awarded High Commendation at Youth Parliament (2025) for exceptional debate, public articulation, policy analysis, and high-stakes critical thinking.'
   }
 ];
 
