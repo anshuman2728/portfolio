@@ -5,18 +5,13 @@ export const CustomCursor: React.FC = () => {
   const [trailingPos, setTrailingPos] = useState({ x: -100, y: -100 });
   const [hoverState, setHoverState] = useState<'default' | 'pointer' | 'project'>('default');
   const [isVisible, setIsVisible] = useState(false);
-  const [isTouchDevice, setIsTouchDevice] = useState(true);
+  const [isTouchDevice] = useState(() => {
+    if (typeof window === 'undefined') return true;
+    return !window.matchMedia('(pointer: fine)').matches || 'ontouchstart' in window || window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  });
 
   useEffect(() => {
-    // Detect touch device or reduced motion
-    const hasTouch = !window.matchMedia('(pointer: fine)').matches || 'ontouchstart' in window;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-    if (hasTouch || prefersReducedMotion) {
-      setIsTouchDevice(true);
-      return;
-    }
-    setIsTouchDevice(false);
+    if (isTouchDevice) return;
 
     const onMouseMove = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
@@ -64,7 +59,7 @@ export const CustomCursor: React.FC = () => {
       document.removeEventListener('mouseenter', onMouseEnter);
       cancelAnimationFrame(rafId);
     };
-  }, [position.x, position.y, isVisible]);
+  }, [position.x, position.y, isVisible, isTouchDevice]);
 
   if (isTouchDevice || !isVisible) return null;
 

@@ -20,8 +20,17 @@
     letter-spacing: -0.04em;
   }
 
-  code, pre, .font-mono {
+    code, pre, .font-mono {
     font-family: var(--font-mono);
+  }
+
+  section {
+    scroll-margin-top: 5.5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid #FFFFFF;
+    outline-offset: 3px;
   }
 }
 

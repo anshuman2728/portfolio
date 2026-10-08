@@ -138,7 +138,7 @@ export const ScrollRevealText: React.FC<ScrollRevealTextProps> = (props) => {
   // Line detection for Lines mode
   useEffect(() => {
     if (!isLinesMode) {
-      if (lineGroups !== null) setLineGroups(null);
+      setLineGroups((prev) => (prev !== null ? null : prev));
       return;
     }
     const detect = () => {

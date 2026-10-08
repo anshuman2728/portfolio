@@ -79,6 +79,7 @@ export const TechStack: React.FC = () => {
           <input
             type="text"
             placeholder="FILTER BY STACK (E.G. JAVA, REACT)..."
+            aria-label="Filter skills by technology or competency"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-9 pr-3 py-2 bg-transparent border border-zinc-800 text-xs text-white placeholder-zinc-700 focus:outline-none focus:border-zinc-500 uppercase transition-colors"

@@ -149,10 +149,11 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
 
           <form onSubmit={handleSubmit} className="space-y-6 font-mono text-xs">
             <div>
-              <label className="block text-zinc-400 uppercase tracking-wider mb-2">
+              <label htmlFor="contact-name" className="block text-zinc-400 uppercase tracking-wider mb-2">
                 YOUR NAME / ORGANIZATION *
               </label>
               <input
+                id="contact-name"
                 type="text"
                 required
                 placeholder="SARAH JENKINS / HIRING TEAM"
@@ -163,10 +164,11 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
             </div>
 
             <div>
-              <label className="block text-zinc-400 uppercase tracking-wider mb-2">
+              <label htmlFor="contact-email" className="block text-zinc-400 uppercase tracking-wider mb-2">
                 YOUR EMAIL ADDRESS *
               </label>
               <input
+                id="contact-email"
                 type="email"
                 required
                 placeholder="SARAH@COMPANY.COM"
@@ -177,10 +179,11 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
             </div>
 
             <div>
-              <label className="block text-zinc-400 uppercase tracking-wider mb-2">
+              <label htmlFor="contact-message" className="block text-zinc-400 uppercase tracking-wider mb-2">
                 MESSAGE / OPPORTUNITY DETAILS *
               </label>
               <textarea
+                id="contact-message"
                 rows={4}
                 required
                 placeholder="HI ANSHUMAN, WE REVIEWED YOUR INTERVAI PLATFORM AND WOULD LOVE TO DISCUSS..."

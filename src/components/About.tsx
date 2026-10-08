@@ -39,7 +39,11 @@ export const About: React.FC = () => {
             <div className="relative aspect-[3/4] overflow-hidden bg-zinc-900">
               <img
                 src={PERSONAL_INFO.portraitUrl}
-                alt="Anshuman Singh"
+                alt="Portrait of Anshuman Singh, Full-Stack Software Engineer"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={800}
                 className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                 onError={(e) => {
                   (e.target as HTMLElement).style.display = 'none';
