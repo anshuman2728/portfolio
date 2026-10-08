@@ -1,14 +1,23 @@
+export type ProjectFilterCategory = 'ALL' | 'FULL STACK' | 'AI' | 'WEB' | 'OTHER';
+
 export interface Project {
   id: string;
   title: string;
   tagline: string;
   category: 'AI & Full Stack' | 'E-Commerce & Frontend' | 'Full Stack System' | 'Core Java & OOP';
+  filterCategory: 'FULL STACK' | 'AI' | 'WEB' | 'OTHER';
   featured: boolean;
   liveUrl?: string;
   githubUrl?: string;
   image?: string;
   description: string;
+  problem: string;
+  solution: string;
+  myContribution: string;
   highlights: string[];
+  keyFeatures: string[];
+  technicalChallenges?: string;
+  outcome?: string;
   techStack: string[];
   metrics?: { label: string; value: string }[];
   architectureSummary: string;

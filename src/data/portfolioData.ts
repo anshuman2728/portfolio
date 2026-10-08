@@ -31,16 +31,28 @@ export const PROJECTS: Project[] = [
     title: 'IntervAI',
     tagline: 'Autonomous AI Technical Interviewer | Next.js, Node.js, Express, MongoDB, OpenRouter API',
     category: 'AI & Full Stack',
+    filterCategory: 'AI',
     featured: true,
     liveUrl: 'https://interv-ai-weld.vercel.app/',
     githubUrl: 'https://github.com/anshuman2728',
-    description: 'A full-stack, autonomous technical interviewer engineered for multi-turn software engineering assessments. Evaluates system design and agentic workflows, generating detailed performance scorecards with dual-engine heuristic fallback resilience.',
+    description: 'A full-stack, autonomous technical interviewer engineered for dynamic, multi-turn software engineering assessments. Evaluates system design and agentic workflows, generating detailed performance scorecards with dual-engine heuristic fallback resilience.',
+    problem: 'Traditional technical screening faces severe scheduling bottlenecks, subjective evaluation variance, and static question sets that cannot test candidate depth in architecture or adaptive reasoning.',
+    solution: 'Engineered an autonomous AI interviewer integrating OpenRouter LLM context streams to dynamically evaluate candidate answers, pose context-aware follow-up challenges, and generate rubric scorecards with in-memory heuristic fallback systems.',
+    myContribution: 'Full-Stack Architect & Core Developer. Designed prompt engineering evaluation pipelines, implemented Next.js candidate portal with learning telemetry, and engineered the dual-engine fallback system.',
     highlights: [
       'Engineered a full-stack AI technical interviewer for dynamic, multi-turn software engineering assessments.',
       'Integrated OpenRouter API to evaluate system design and agentic workflows, generating detailed performance scorecards.',
       'Architected a dual-engine system with in-memory heuristic fallbacks, ensuring zero downtime during API rate limits.',
       'Built a responsive React and Tailwind CSS candidate portal with personalised learning telemetry data.'
     ],
+    keyFeatures: [
+      'Dynamic multi-turn software engineering assessments across DSA and System Design',
+      'Structured rubric breakdown and automated scorecard generation',
+      'Dual-engine architecture with in-memory heuristic fallbacks preventing downtime',
+      'Personalized candidate learning telemetry with response latency diagnostics'
+    ],
+    technicalChallenges: 'Maintaining continuous evaluation state during external LLM API rate limits and network degradation without interrupting candidate assessments. Solved via an in-memory heuristic evaluation engine.',
+    outcome: 'Live deployed platform on Vercel with zero downtime fallback resilience and end-to-end telemetry analytics.',
     techStack: ['Next.js 16', 'React', 'Node.js', 'Express.js', 'MongoDB', 'OpenRouter API', 'Tailwind CSS', 'TypeScript'],
     metrics: [
       { label: 'System Uptime', value: 'Zero-Downtime Fallback' },
@@ -54,15 +66,27 @@ export const PROJECTS: Project[] = [
     title: 'Hemant Tiles & Building Material Platform',
     tagline: 'Digital Storefront & Building Supplies Platform | React 19, TypeScript, Vite, Supabase',
     category: 'E-Commerce & Frontend',
+    filterCategory: 'WEB',
     featured: true,
     liveUrl: 'https://hemanttilesandbuildingmaterial.lovable.app/',
     githubUrl: 'https://github.com/anshuman2728',
     description: 'A modern, responsive digital storefront optimizing product discovery, seamless customer navigation, and commercial inquiries for building materials and tiles.',
+    problem: 'Architectural supplies and tile retailers frequently struggle with slow physical catalog browsing, disjointed quotation requests, and delayed customer inquiry turnarounds.',
+    solution: 'Developed a high-speed, responsive digital catalog and commercial inquiry storefront leveraging React 19, TypeScript, and Supabase PostgreSQL with type-safe schema validation.',
+    myContribution: 'Frontend Architect & BaaS Database Integrator. Designed responsive atomic UI components in React 19, implemented Zod form pipelines, and configured Supabase data management.',
     highlights: [
       'Developed a responsive digital storefront optimising product discovery and seamless customer navigation.',
       'Built scalable UI components using React 19 and TypeScript, integrating Supabase for secure backend data management.',
       'Implemented structured form handling with Zod validation and React Hook Form to streamline customer inquiries.'
     ],
+    keyFeatures: [
+      'High-speed digital catalog optimizing product discovery across hundreds of categories',
+      'Supabase PostgreSQL persistence for inventory records and commercial inquiries',
+      'Strict schema validation using Zod and React Hook Form to eliminate bad inquiries',
+      'Modular atomic UI component library built with React 19 and Tailwind CSS'
+    ],
+    technicalChallenges: 'Managing stateful customer quotation forms with multiple dynamic item selections and ensuring zero client-side schema mismatches before sending to Supabase.',
+    outcome: 'Live deployed commercial digital storefront driving product discovery and structured inquiry management.',
     techStack: ['React 19', 'TypeScript', 'Vite', 'Supabase (PostgreSQL)', 'Tailwind CSS', 'Zod', 'React Hook Form'],
     metrics: [
       { label: 'Frontend Engine', value: 'React 19 + TypeScript' },
@@ -76,14 +100,26 @@ export const PROJECTS: Project[] = [
     title: 'Cyber Heist',
     tagline: 'Interactive Java Application | Core Java, OOP, Multithreading, UI/UX',
     category: 'Core Java & OOP',
+    filterCategory: 'OTHER',
     featured: true,
     githubUrl: 'https://github.com/anshuman2728',
     description: 'A fully functional standalone game applying core Java concepts, including advanced object-oriented programming (OOP), multithreading, and event handling with custom physics and game loops.',
+    problem: 'Building high-performance, real-time desktop game loops in Java without external game engines requires fine-grained control over thread synchronization, rendering cycles, and memory allocation to prevent frame drops.',
+    solution: 'Constructed a fully functional standalone action game applying advanced OOP, multithreading, and event handling, featuring custom game loops, collision algorithms, and dynamic entity state management.',
+    myContribution: 'Core Java Engine Developer. Engineered multithreaded game loops, deterministic collision detection algorithms, event listener subsystems, and memory cleanup routines.',
     highlights: [
       'Developed a fully functional standalone game applying core Java concepts, including advanced object-oriented programming (OOP), multithreading, and event handling.',
       'Engineered custom game loops, collision detection algorithms, and dynamic entity state management to ensure smooth and responsive runtime execution.',
       'Optimised asset rendering and memory management routines to maintain consistent frame rates and optimal performance without memory leaks.'
     ],
+    keyFeatures: [
+      'Independent multithreaded loops separating physics updates and screen rendering',
+      'Custom boundary collision detection algorithms and dynamic entity state machines',
+      'Event-driven keyboard and action listener pipelines',
+      'Memory-optimized sprite rendering routines maintaining consistent frame rates'
+    ],
+    technicalChallenges: 'Eliminating frame stutter caused by JVM garbage collection and non-synchronized thread access during rapid collision events. Resolved via object pooling and deterministic delta-time game loops.',
+    outcome: 'Standalone Java desktop application demonstrating strong OOP principles, thread synchronization, and leak-free memory management.',
     techStack: ['Core Java', 'OOP', 'Multithreading', 'Event Handling', 'Game Loops', 'Collision Detection', 'UI/UX'],
     metrics: [
       { label: 'Runtime Engine', value: 'Core Java / JVM' },
@@ -97,15 +133,27 @@ export const PROJECTS: Project[] = [
     title: 'Jeevan Setu',
     tagline: 'Gamified Disaster Management & Real-Time Emergency Education System',
     category: 'Full Stack System',
+    filterCategory: 'FULL STACK',
     featured: false,
     githubUrl: 'https://github.com/anshuman2728',
     description: 'A full-stack gamified educational web platform designed to prepare students for disaster safety protocols through interactive simulation games, live emergency feeds, and intelligent emergency guidance.',
+    problem: 'Disaster safety protocol instructions are often dense, passive, and poorly retained by students during real-world crises.',
+    solution: 'Designed a full-stack gamified web portal that transforms disaster preparedness training into interactive decision-tree scenario simulations paired with real-time national emergency alert ingestion.',
+    myContribution: 'Full-Stack Developer. Built state machine quiz logic, integrated third-party emergency alert APIs, and developed RESTful services with Spring Boot and Node.js.',
     highlights: [
       'Developed an interactive gamified web portal to educate users on natural disaster precautions through simulated challenges and interactive scenario quizzes.',
       'Integrated live third-party APIs to stream real-time national disaster advisories, news feeds, and critical emergency alerts directly to users.',
       'Designed dynamic REST API microservices for handling quiz state machines, user progress telemetry, and scoring leaderboards.',
       'Applied core game design principles and accessible UI mechanics to elevate engagement and protocol retention.'
     ],
+    keyFeatures: [
+      'Interactive scenario simulation challenges demonstrating disaster safety procedures',
+      'Live streaming of national disaster advisories via third-party emergency alert APIs',
+      'RESTful state machine handling user progress telemetry and scoring leaderboards',
+      'Engaging, accessible user interface optimized for high protocol retention'
+    ],
+    technicalChallenges: 'Ingesting external heterogeneous disaster advisory feeds in real time while maintaining rapid quiz interaction response times.',
+    outcome: 'Comprehensive educational platform bridging interactive gamification with live crisis advisory telemetry.',
     techStack: ['Node.js', 'Spring Boot / REST APIs', 'JavaScript', 'HTML5/CSS3', 'MySQL / Real-Time Data'],
     metrics: [
       { label: 'Core Mechanism', value: 'Gamified Learning Engine' },
