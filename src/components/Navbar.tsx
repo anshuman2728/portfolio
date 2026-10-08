@@ -12,6 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
 
   const navLinks = [
     { id: 'projects', label: 'WORK' },
+    { id: 'proof', label: 'CREDIBILITY' },
     { id: 'stack', label: 'EXPERTISE' },
     { id: 'about', label: 'ABOUT' },
     { id: 'achievements', label: 'HONORS' },
@@ -22,7 +23,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
 
-      const sections = ['home', 'projects', 'stack', 'about', 'achievements', 'contact'];
+      const sections = ['home', 'projects', 'proof', 'stack', 'about', 'achievements', 'contact'];
       for (const section of sections) {
         const el = document.getElementById(section);
         if (el) {

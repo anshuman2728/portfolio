@@ -12,6 +12,8 @@ export const PERSONAL_INFO = {
   githubUsername: 'anshuman2728',
   linkedin: 'https://linkedin.com/in/anshuman-singh-cse',
   linkedinUsername: 'anshuman-singh-cse',
+  leetcode: 'https://leetcode.com/u/anshuman2728/',
+  leetcodeUsername: 'anshuman2728',
   resumeUrl: '/assets/Anshuman_Singh_Resume.pdf',
   portraitUrl: '/assets/anshuman-portrait.jpg',
   sculptureUrl: '/assets/sculpture.jpg',
@@ -19,9 +21,9 @@ export const PERSONAL_INFO = {
   bio: `Results-oriented Software Engineer and Full-Stack Developer with strong expertise in Java, React, Node.js, and scalable web architectures. Proven track record in developing autonomous AI-driven assessment tools, responsive e-commerce platforms, and interactive Java applications. Possesses a solid foundation in Data Structures and Algorithms (DSA), complex problem-solving, API design, and database management. Adept at building clean, performance-optimised solutions for modern IT and AI environments.`,
   quickMetrics: [
     { value: '175+', label: 'LeetCode DSA Solved', sublabel: 'Data Structures & Algorithms in Java' },
-    { value: '3', label: 'Flagship Systems', sublabel: 'IntervAI, Hemant Tiles & Cyber Heist' },
+    { value: '4', label: 'Engineering Systems', sublabel: 'IntervAI, Hemant Tiles, Cyber Heist, Jeevan Setu' },
     { value: '2027', label: 'B.Tech CSE Graduation', sublabel: 'JSS Academy of Technical Education' },
-    { value: '100%', label: 'Commitment to Craft', sublabel: 'Clean code & resilient architecture' }
+    { value: 'SIH', label: 'Smart India Hackathon', sublabel: 'Round 2 Qualifier' }
   ]
 };
 
@@ -165,60 +167,71 @@ export const PROJECTS: Project[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    name: 'Programming Languages',
+    name: 'LANGUAGES',
     iconName: 'Code2',
     skills: [
       { name: 'Java', level: 'Core / OOP / Multithreading', highlighted: true },
       { name: 'JavaScript', level: 'ES6+ / Modern Web / Async', highlighted: true },
-      { name: 'TypeScript', level: 'Strict Types / Generics', highlighted: true },
-      { name: 'HTML5/CSS3', level: 'Semantic & Responsive', highlighted: true },
+      { name: 'TypeScript', level: 'Strict Types & Contracts', highlighted: true },
       { name: 'SQL', level: 'Relational Queries & DDL', highlighted: true },
+      { name: 'HTML5/CSS3', level: 'Semantic Structure & Responsive', highlighted: true },
       { name: 'C', level: 'Memory & Procedural Fundamentals' }
     ]
   },
   {
-    name: 'Core Competencies',
-    iconName: 'Cpu',
-    skills: [
-      { name: 'Data Structures & Algorithms (DSA)', level: '175+ Solved on LeetCode', highlighted: true },
-      { name: 'Complex Problem Solving', level: 'Algorithmic Optimization', highlighted: true },
-      { name: 'System Design', level: 'Scalable Architectures', highlighted: true },
-      { name: 'Object-Oriented Programming (OOP)', level: 'Design Patterns & Principles', highlighted: true }
-    ]
-  },
-  {
-    name: 'Frontend Technologies',
+    name: 'FRONTEND',
     iconName: 'Layout',
     skills: [
       { name: 'React 19', level: 'Concurrent / Hooks / State', highlighted: true },
       { name: 'Next.js 16', level: 'App Router / SSR / Full-Stack', highlighted: true },
+      { name: 'HTML5', level: 'Semantic HTML5 Standards', highlighted: true },
+      { name: 'CSS3', level: 'Modern Layouts & Animations', highlighted: true },
       { name: 'Tailwind CSS', level: 'Design Systems & Utility', highlighted: true },
-      { name: 'Radix UI', level: 'Accessible Headless Primitives', highlighted: true },
-      { name: 'Framer Motion', level: 'Physics & Micro-Interactions', highlighted: true },
-      { name: 'Zod & React Hook Form', level: 'Type-Safe Validation' }
+      { name: 'Radix UI', level: 'Accessible Headless Primitives' },
+      { name: 'Framer Motion', level: 'Micro-Interactions & Spring Physics' },
+      { name: 'Zod & React Hook Form', level: 'Type-Safe Validation Contracts' }
     ]
   },
   {
-    name: 'Backend & Databases',
+    name: 'BACKEND',
     iconName: 'Server',
     skills: [
-      { name: 'Node.js', level: 'Async Runtime & Services', highlighted: true },
-      { name: 'Express.js', level: 'RESTful APIs & Middleware', highlighted: true },
-      { name: 'RESTful APIs', level: 'Contract Design & Endpoints', highlighted: true },
-      { name: 'MongoDB', level: 'NoSQL / Aggregations', highlighted: true },
-      { name: 'Supabase (PostgreSQL)', level: 'Relational DB & BaaS', highlighted: true },
-      { name: 'ChromaDB', level: 'Vector Embeddings / RAG' }
+      { name: 'Spring Boot', level: 'Enterprise Java / REST Services', highlighted: true },
+      { name: 'REST APIs', level: 'Endpoint Design & Contracts', highlighted: true },
+      { name: 'Node.js', level: 'Asynchronous Event-Driven Runtime', highlighted: true },
+      { name: 'Express.js', level: 'Microservices & Middleware', highlighted: true }
     ]
   },
   {
-    name: 'Tools & Methodologies',
+    name: 'DATABASE',
+    iconName: 'Database',
+    skills: [
+      { name: 'MySQL', level: 'Relational Schemas & Indexing', highlighted: true },
+      { name: 'MongoDB', level: 'NoSQL Document Store & Aggregations', highlighted: true },
+      { name: 'Supabase (PostgreSQL)', level: 'Relational Cloud DB & BaaS', highlighted: true },
+      { name: 'ChromaDB', level: 'Vector Embeddings / Semantic RAG' }
+    ]
+  },
+  {
+    name: 'CORE CS',
+    iconName: 'Cpu',
+    skills: [
+      { name: 'Data Structures & Algorithms (DSA)', level: '175+ Solved in Java on LeetCode', highlighted: true },
+      { name: 'Object-Oriented Programming (OOP)', level: 'Encapsulation, Polymorphism, Design Patterns', highlighted: true },
+      { name: 'Database Management Systems (DBMS)', level: 'ACID, Normalization, Transactions', highlighted: true },
+      { name: 'Computer Networks', level: 'TCP/IP, HTTP/HTTPS, DNS, Sockets', highlighted: true },
+      { name: 'Operating Systems', level: 'Threads, Process Scheduling, Memory Management', highlighted: true }
+    ]
+  },
+  {
+    name: 'TOOLS',
     iconName: 'Wrench',
     skills: [
-      { name: 'Git & GitHub', level: 'Version Control / Workflows', highlighted: true },
-      { name: 'Vite', level: 'High-Speed Bundling', highlighted: true },
+      { name: 'Git', level: 'Version Control & Distributed Branching', highlighted: true },
+      { name: 'GitHub', level: 'Code Collaboration & CI Workflows', highlighted: true },
+      { name: 'Vite', level: 'High-Speed Modern Bundling', highlighted: true },
       { name: 'Postman', level: 'API Testing & Telemetry', highlighted: true },
-      { name: 'Agile/Scrum', level: 'Iterative Engineering', highlighted: true },
-      { name: 'Prompt Engineering', level: 'Agentic AI & Evaluation', highlighted: true }
+      { name: 'Vercel', level: 'Edge Deployment & Observability', highlighted: true }
     ]
   }
 ];

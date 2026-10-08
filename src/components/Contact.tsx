@@ -111,31 +111,44 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
           </div>
 
           {/* Social Gateways */}
-          <div className="grid grid-cols-2 gap-4 pt-2">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
             <a
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-5 bg-zinc-950/60 border border-zinc-800 hover:border-zinc-500 transition-all flex items-center justify-between group"
+              className="p-4 bg-zinc-950/60 border border-zinc-800 hover:border-zinc-500 transition-all flex items-center justify-between group"
             >
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-500 uppercase block">NETWORK</span>
-                <span className="text-sm font-bold text-white font-display">LINKEDIN</span>
+                <span className="text-xs font-bold text-white font-display">LINKEDIN</span>
               </div>
-              <ArrowUpRight className="w-4 h-4 text-zinc-500 group-hover:text-white transition-colors" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-white transition-colors" />
             </a>
 
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-5 bg-zinc-950/60 border border-zinc-800 hover:border-zinc-500 transition-all flex items-center justify-between group"
+              className="p-4 bg-zinc-950/60 border border-zinc-800 hover:border-zinc-500 transition-all flex items-center justify-between group"
             >
-              <div className="space-y-1">
+              <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-500 uppercase block">CODEBASE</span>
-                <span className="text-sm font-bold text-white font-display">GITHUB</span>
+                <span className="text-xs font-bold text-white font-display">GITHUB</span>
               </div>
-              <ArrowUpRight className="w-4 h-4 text-zinc-500 group-hover:text-white transition-colors" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-white transition-colors" />
+            </a>
+
+            <a
+              href={PERSONAL_INFO.leetcode}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 bg-zinc-950/60 border border-zinc-800 hover:border-zinc-500 transition-all flex items-center justify-between group"
+            >
+              <div className="space-y-0.5">
+                <span className="text-[10px] text-zinc-500 uppercase block">ALGORITHMS</span>
+                <span className="text-xs font-bold text-white font-display">LEETCODE</span>
+              </div>
+              <ArrowUpRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-white transition-colors" />
             </a>
           </div>
 

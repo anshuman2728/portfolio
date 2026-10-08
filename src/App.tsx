@@ -4,6 +4,7 @@ import { CustomCursor } from './components/CustomCursor';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
+import { ProofOfWork } from './components/ProofOfWork';
 import { TechStack } from './components/TechStack';
 import { About } from './components/About';
 import { ExperienceAchievements } from './components/ExperienceAchievements';
@@ -38,6 +39,7 @@ export function App() {
       <main className="relative z-10 flex flex-col">
         <Hero onOpenResume={() => setResumeOpen(true)} />
         <Projects />
+        <ProofOfWork />
         <TechStack />
         <About />
         <ExperienceAchievements />
