@@ -94,6 +94,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             {/* Primary CTA: "View My Work" */}
             <button
               onClick={() => scrollTo('projects')}
+              data-magnetic="true"
               className="w-full sm:w-auto px-6 py-3.5 bg-white text-black font-bold flex items-center justify-center gap-2.5 hover:bg-zinc-200 transition-all duration-300 cursor-pointer shadow-lg shadow-white/5 group focus-visible:ring-2 focus-visible:ring-white"
             >
               <span>VIEW MY WORK</span>
@@ -104,6 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             <a
               href={PERSONAL_INFO.resumeUrl}
               download="Anshuman_Singh_Resume.pdf"
+              data-magnetic="true"
               className="w-full sm:w-auto px-5 py-3.5 border border-zinc-700 hover:border-white text-zinc-200 hover:text-white flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer group focus-visible:ring-2 focus-visible:ring-white"
             >
               <Download className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -113,6 +115,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             {/* Tertiary Action: Interactive CV Modal */}
             <button
               onClick={onOpenResume}
+              data-magnetic="true"
               className="px-2 py-1.5 text-zinc-400 hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer text-[11px]"
             >
               <span>INTERACTIVE CV</span>

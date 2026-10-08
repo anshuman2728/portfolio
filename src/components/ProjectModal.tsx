@@ -26,14 +26,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
+      className="fixed inset-0 z-[120] flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-label={`${project.title} Architectural Specification`}
     >
       <div 
-        className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto bg-[#0A0A0D] border border-zinc-800 p-6 sm:p-10 shadow-2xl text-left text-zinc-300 font-mono scrollbar-thin scrollbar-thumb-zinc-700"
+        className="relative w-full max-w-4xl max-h-[92vh] overflow-y-auto bg-[#0A0A0D] border border-zinc-800 p-6 sm:p-10 shadow-2xl text-left text-zinc-300 font-mono scrollbar-thin scrollbar-thumb-zinc-700 animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

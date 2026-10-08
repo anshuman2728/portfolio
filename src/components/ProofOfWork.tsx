@@ -40,6 +40,8 @@ export const ProofOfWork: React.FC = () => {
           href={PERSONAL_INFO.github}
           target="_blank"
           rel="noopener noreferrer"
+          data-magnetic="true"
+          data-cursor="code"
           className="p-6 sm:p-8 bg-[#0B0B0E] border border-zinc-800 hover:border-zinc-500 transition-all duration-300 flex flex-col justify-between group cursor-pointer shadow-lg"
         >
           <div className="space-y-4">
@@ -67,6 +69,8 @@ export const ProofOfWork: React.FC = () => {
           href={PERSONAL_INFO.leetcode}
           target="_blank"
           rel="noopener noreferrer"
+          data-magnetic="true"
+          data-cursor="spec"
           className="p-6 sm:p-8 bg-[#0B0B0E] border border-zinc-800 hover:border-zinc-500 transition-all duration-300 flex flex-col justify-between group cursor-pointer shadow-lg"
         >
           <div className="space-y-4">
@@ -94,6 +98,8 @@ export const ProofOfWork: React.FC = () => {
           href={PERSONAL_INFO.linkedin}
           target="_blank"
           rel="noopener noreferrer"
+          data-magnetic="true"
+          data-cursor="live"
           className="p-6 sm:p-8 bg-[#0B0B0E] border border-zinc-800 hover:border-zinc-500 transition-all duration-300 flex flex-col justify-between group cursor-pointer shadow-lg"
         >
           <div className="space-y-4">

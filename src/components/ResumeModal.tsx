@@ -25,14 +25,14 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
+      className="fixed inset-0 z-[120] flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md animate-in fade-in duration-200"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
       aria-label="Anshuman Singh Curriculum Vitae"
     >
       <div 
-        className="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-[#0B0B0E] editorial-border shadow-2xl overflow-hidden text-left text-zinc-300 font-mono text-xs"
+        className="relative w-full max-w-4xl max-h-[92vh] flex flex-col bg-[#0B0B0E] editorial-border shadow-2xl overflow-hidden text-left text-zinc-300 font-mono text-xs animate-in fade-in zoom-in-95 duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Control Bar */}
