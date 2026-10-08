@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anshuman-singh.vercel.app/sitemap.xml

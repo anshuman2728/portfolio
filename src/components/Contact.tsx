@@ -44,7 +44,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
 
         <h2 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold font-display tracking-tighter text-white leading-[0.9]">
           <ScrollRevealText
-            text="LET'S BUILD TOGETHER."
+            text="LET'S BUILD SOMETHING."
             trigger="Scroll"
             preset="Fade In Up"
             splitMode="Characters"
@@ -57,7 +57,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
         </h2>
 
         <p className="text-zinc-400 text-base sm:text-xl font-light max-w-2xl pt-2">
-          Open to full-time Software Engineer positions, SDE internships, and ambitious engineering collaborations.
+          I'm currently open to software engineering opportunities, internships and interesting technical projects.
         </p>
       </div>
 

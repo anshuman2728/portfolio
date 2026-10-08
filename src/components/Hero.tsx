@@ -89,15 +89,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             </div>
           </div>
 
-          {/* CTAs with Refined Hierarchy */}
+          {/* CTAs with Recruiter-Focused Conversion Hierarchy */}
           <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-start lg:items-end gap-3.5 font-mono text-xs tracking-widest uppercase">
-            {/* Primary CTA: "View My Work" */}
+            {/* Primary CTA: "View Work" */}
             <button
               onClick={() => scrollTo('projects')}
               data-magnetic="true"
               className="w-full sm:w-auto px-6 py-3.5 bg-white text-black font-bold flex items-center justify-center gap-2.5 hover:bg-zinc-200 transition-all duration-300 cursor-pointer shadow-lg shadow-white/5 group focus-visible:ring-2 focus-visible:ring-white"
             >
-              <span>VIEW MY WORK</span>
+              <span>VIEW WORK</span>
               <ArrowDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
             </button>
 
@@ -107,20 +107,32 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               download="Anshuman_Singh_Resume.pdf"
               data-magnetic="true"
               className="w-full sm:w-auto px-5 py-3.5 border border-zinc-700 hover:border-white text-zinc-200 hover:text-white flex items-center justify-center gap-2 transition-all duration-300 cursor-pointer group focus-visible:ring-2 focus-visible:ring-white"
+              aria-label="Download Anshuman Singh Resume PDF"
             >
               <Download className="w-3.5 h-3.5 group-hover:-translate-y-0.5 transition-transform" />
               <span>DOWNLOAD RESUME</span>
             </a>
 
-            {/* Tertiary Action: Interactive CV Modal */}
-            <button
-              onClick={onOpenResume}
-              data-magnetic="true"
-              className="px-2 py-1.5 text-zinc-400 hover:text-white flex items-center gap-1.5 transition-colors cursor-pointer text-[11px]"
-            >
-              <span>INTERACTIVE CV</span>
-              <ArrowUpRight className="w-3 h-3" />
-            </button>
+            {/* Direct Contact & Interactive CV */}
+            <div className="flex items-center gap-4 pt-1">
+              <button
+                onClick={() => scrollTo('contact')}
+                data-magnetic="true"
+                className="text-zinc-300 hover:text-white border-b border-zinc-700 pb-0.5 hover:border-white transition-colors cursor-pointer text-xs font-mono tracking-widest uppercase flex items-center gap-1.5"
+              >
+                <span>CONTACT</span>
+                <ArrowDown className="w-3 h-3 -rotate-45" />
+              </button>
+              <span className="text-zinc-600">&bull;</span>
+              <button
+                onClick={onOpenResume}
+                data-magnetic="true"
+                className="text-zinc-400 hover:text-white transition-colors cursor-pointer text-xs font-mono tracking-widest uppercase flex items-center gap-1"
+              >
+                <span>INTERACTIVE CV</span>
+                <ArrowUpRight className="w-3 h-3" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
