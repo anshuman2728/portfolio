@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { BackgroundEffect } from './components/BackgroundEffect';
-import { CustomCursor } from './components/CustomCursor';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
@@ -26,9 +25,6 @@ export function App() {
 
   return (
     <div className="min-h-screen bg-[#09090B] text-[#F4F4F5] relative selection:bg-white selection:text-black">
-      {/* Sleek Custom Cursor */}
-      <CustomCursor />
-
       {/* Dynamic Ambient Background */}
       <BackgroundEffect />
 
