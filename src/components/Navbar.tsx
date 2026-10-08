@@ -12,7 +12,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
 
   const navLinks = [
     { id: 'projects', label: 'WORK' },
-    { id: 'proof', label: 'CREDIBILITY' },
+    { id: 'proof', label: 'PROFILES' },
     { id: 'stack', label: 'EXPERTISE' },
     { id: 'about', label: 'ABOUT' },
     { id: 'achievements', label: 'HONORS' },
